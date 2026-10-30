@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop beautiful indoor plants, outdoor plants, flowering plants, bouquets, seeds and gardening essentials at Harshu Plants & Flowers.">
+  <title>Harshu Plants & Flowers | Grow a Little Happiness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar" id="navbar">
+  <a class="brand" href="#home" aria-label="Harshu Plants and Flowers home"><span class="brand-leaf">❋</span><span>Harshu <em>Plants & Flowers</em></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+    <a class="nav-link active" href="#home">Home</a>
+    <a class="nav-link" href="#shop">Shop Plants</a>
+    <a class="nav-link" href="#categories">Categories</a>
+    <a class="nav-link" href="#about">About Us</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </nav>
+  <button class="cart-button" id="cartButton" aria-label="Open shopping cart">🛒 <span>Cart</span> <b id="cartCount">0</b></button>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <p class="eyebrow">BRING NATURE HOME</p>
+      <h1>Grow a little<br><span>happiness.</span></h1>
+      <p class="hero-text">Discover beautiful plants, fresh flowers and everything you need to make your space bloom.</p>
+      <a class="primary-button" href="#shop">Explore the garden <span>→</span></a>
+      <div class="hero-notes"><span>🌱 Happy plants</span><span>🌷 Fresh blooms</span><span>💚 Made with care</span></div>
+    </div>
+    <div class="hero-visual" role="img" aria-label="Decorative garden illustration">
+      <div class="hero-circle"></div>
+      <div class="hero-photo"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1000&q=90" alt="Lush green potted plants"></div>
+      <div class="floating-note">A little green<br>goes a long way 🌿</div>
+      <span class="flower-deco">✿</span>
+    </div>
+  </section>
+
+  <section class="category-section section" id="categories">
+    <div class="section-heading centered"><p class="eyebrow">FIND YOUR FAVOURITE</p><h2>Shop by category</h2><p class="muted">A little something for every plant lover.</p></div>
+    <div class="category-grid">
+      <a class="category-card" href="#shop" data-category-link="Indoor Plants"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=650&q=85" alt="Indoor green plant"><span>Indoor Plants</span><small>Greener corners</small></a>
+      <a class="category-card" href="#shop" data-category-link="Flowering Plants"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=650&q=85" alt="Pink flowers"><span>Flowering Plants</span><small>Colourful blooms</small></a>
+      <a class="category-card" href="#shop" data-category-link="Bouquets"><img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=650&q=85" alt="Fresh flower bouquet"><span>Fresh Bouquets</span><small>Gifts from the heart</small></a>
+      <a class="category-card" href="#shop" data-category-link="Outdoor Plants"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=650&q=85" alt="Outdoor gardening plants"><span>Outdoor Plants</span><small>Grow your garden</small></a>
+    </div>
+  </section>
+
+  <section class="shop-section section" id="shop">
+    <div class="section-heading shop-heading">
+      <div><p class="eyebrow">OUR LITTLE GREEN WORLD</p><h2>Plants & flowers for you</h2><p class="muted">Choose your favourites and add them to your cart.</p></div>
+      <div class="shop-tools">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search plants or flowers..." aria-label="Search plants and flowers"></label>
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All categories</option><option>Indoor Plants</option><option>Outdoor Plants</option><option>Flowering Plants</option><option>Flowers & Bouquets</option><option>Seeds & Gardening</option>
+        </select>
+      </div>
+    </div>
+    <div class="product-grid" id="productGrid" aria-live="polite"></div>
+    <p class="empty-message" id="emptyMessage" hidden>No products found. Try another search or category.</p>
+  </section>
+
+  <section class="care-banner section" id="about">
+    <div class="care-icon">🌿</div>
+    <div><p class="eyebrow">A LITTLE CARE GOES A LONG WAY</p><h2>New to plants? We’re here to help.</h2><p>From easy-care indoor plants to colourful garden flowers, Harshu Plants & Flowers helps you bring nature into your everyday life.</p></div>
+    <a class="outline-button" href="#contact">Ask us anything</a>
+  </section>
+
+  <section class="why-section section">
+    <div class="section-heading centered"><p class="eyebrow">WHY SHOP WITH US?</p><h2>Rooted in care 💚</h2></div>
+    <div class="benefit-grid">
+      <article><span>🌱</span><h3>Plants for every space</h3><p>Small desks, sunny balconies and beautiful gardens.</p></article>
+      <article><span>🌸</span><h3>Flowers for every moment</h3><p>Brighten birthdays, celebrations and ordinary days.</p></article>
+      <article><span>🪴</span><h3>Garden essentials</h3><p>Pots, soil and seeds to help your garden grow.</p></article>
+    </div>
+  </section>
+
+  <section class="contact-section section" id="contact">
+    <div><p class="eyebrow">SAY HELLO</p><h2>Let’s talk plants.</h2><p class="muted">Have a question about a plant or flower? Send a demo message below.</p><p class="contact-detail">✉ hello@harshuplants.example</p><p class="contact-detail">🌿 Made for plant lovers</p></div>
+    <form id="contactForm" class="contact-form">
+      <label>Your name<input id="contactName" required placeholder="Enter your name"></label>
+      <label>Email address<input id="contactEmail" type="email" required placeholder="you@example.com"></label>
+      <label>Your message<textarea id="contactMessage" rows="3" required placeholder="Tell us what you're looking for..."></textarea></label>
+      <button class="primary-button" type="submit">Send message →</button><p id="contactNotice" role="status" class="form-notice"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-leaf">❋</span><span>Harshu <em>Plants & Flowers</em></span></a><p>Grow a little happiness, every day.</p><p>© <span id="year"></span> Harshu Plants & Flowers · Internship demo</p></footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="cart-header"><div><p class="eyebrow">YOUR GARDEN BAG</p><h2>Shopping cart</h2></div><button class="close-button" id="closeCart" aria-label="Close cart">✕</button></div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty" id="cartEmpty"><span>🪴</span><h3>Your cart is waiting to bloom</h3><p>Add a plant or flower to get started.</p></div>
+  <div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><p class="cart-note">Demo checkout only. No payment is taken.</p><button class="primary-button checkout-button" id="checkoutButton">Continue to checkout →</button><p id="checkoutNotice" class="form-notice" role="status"></p></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
